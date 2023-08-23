@@ -1,0 +1,418 @@
+@media only screen and (max-width: 600px) {
+    body, header {
+      background-color: rgb(220, 232, 247);
+    }
+    
+    body {
+      font-family: 'Lato', sans-serif;
+      color: black;
+    }
+    
+    h1, h2, h3, table {
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.308);
+    }
+    
+    h1, h2, h3 {
+      background-color: white;
+      border: 1px solid rgb(124, 124, 124);
+      border-radius: 3px;
+      padding: 1px 10px;
+    }
+    
+    h1, h2 {
+      width: fit-content;
+      color: black;
+    }
+    
+    h2 {
+      font-size: small;
+    }
+    
+    h3 {
+      width: fit-content;
+      margin-bottom: 10px;
+      color: crimson;
+    }
+    
+    table, th, td {
+      border: 1px solid #ccc;
+      padding: 0px;
+      table-layout: fixed;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    
+    table {
+      width: 100%;
+      background-color: rgb(224, 224, 224);
+      margin-bottom: 10px;
+      font-size: small;
+      border-spacing: 0;
+      border-collapse: separate;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    
+    th, td {
+      padding: 3px;
+      text-align: center;
+    }
+    
+    th {
+      line-height: 30px;
+      font-size: medium;
+    }
+    
+    button {
+      background-color: darkblue;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 5px 16px;
+      cursor: pointer;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.308);
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: red;
+    }
+    
+    /* Last refreshed styles */
+    #last-refreshed-1 {
+      /* Add your desired styles here */
+      font-size: 12px;
+      color: darkblue;
+      margin-left: 10px;
+    }
+    
+    /* My Scoreboard Table styles */
+    .my-scoreboard-table td:nth-child(1),
+    .my-scoreboard-table th:nth-child(1), 
+    .my-scoreboard-table-total td:nth-child(1) {
+      width: 40%;
+    }
+    .my-scoreboard-table td:nth-child(2),
+    .my-scoreboard-table th:nth-child(2),
+    .my-scoreboard-table-total td:nth-child(2) {
+      width: 20%;
+      font-weight: bold;
+    }
+    .my-scoreboard-table td:nth-child(3),
+    .my-scoreboard-table th:nth-child(3),
+    .my-scoreboard-table-total td:nth-child(3) {
+      width: 40%;
+    }
+    
+    .my-scoreboard-table-total td {
+      line-height: 25px;
+    }
+    
+    /* League Scoreboard Table styles */
+    .league-scoreboard-table td:nth-child(1),
+    .league-scoreboard-table th:nth-child(1) {
+      width: 75%;
+    }
+    .league-scoreboard-table td:nth-child(2),
+    .league-scoreboard-table th:nth-child(2) {
+      width: 25%;
+    }
+    
+    /* Rosters Table styles */
+    .hitters-table td:nth-child(1),
+    .hitters-table th:nth-child(1),
+    .pitchers-table td:nth-child(1),
+    .pitchers-table th:nth-child(1) {
+      width: 45%;
+    }
+    .hitters-table td:nth-child(2),
+    .hitters-table th:nth-child(2),
+    .pitchers-table td:nth-child(2),
+    .pitchers-table th:nth-child(2) {
+      width: 10%;
+    }
+    .hitters-table td:nth-child(3),
+    .hitters-table th:nth-child(3),
+    .pitchers-table td:nth-child(3),
+    .pitchers-table th:nth-child(3) {
+      width: 45%;
+    }
+    .hitters-table {
+      margin-bottom: 20px;
+    }
+    .batting-order {
+      background: rgb(113, 211, 113);
+      font-size: 0.7rem;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 3px;      
+      text-align: center;
+      line-height: 16px;
+    }
+    .not-starting {
+      background: rgb(189, 92, 92);
+      font-size: 0.5rem;
+      color: white;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 3px;
+      text-align: center;
+      line-height: 16px;
+    }
+    .table-wrapper {
+      padding-right: 6px; /* Add padding to accommodate the drop shadow */
+      overflow: hidden; /* Prevent the drop shadow from overflowing */
+    }
+    
+    
+    /* League Standings Table styles */
+    .standings-table td:nth-child(1),
+    .standings-table th:nth-child(1) {
+      width: 10%;
+    }
+    .standings-table td:nth-child(2),
+    .standings-table th:nth-child(2) {
+     width: 45%;
+    }
+    .standings-table td:nth-child(3),
+    .standings-table td:nth-child(3) {
+      width: 37%;
+    }
+    .standings-table td:nth-child(4),
+    .standings-table td:nth-child(4) {
+      width: 8%;
+    }
+    
+    /* Accordion element styling */
+    #player-stats-accordion {
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+    }
+    
+    @media only screen and (min-width: 600px) {
+    body, header {
+      background-color: rgb(220, 232, 247);
+    }
+    
+    body {
+      font-family: 'Lato', sans-serif;
+      color: black;
+    }
+    
+    h1, h2, h3, table {
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.308);
+    }
+    
+    h1, h2, h3 {
+      background-color: white;
+      border: 1px solid rgb(124, 124, 124);
+      border-radius: 3px;
+      padding: 1px 10px;
+    }
+    
+    h1, h2 {
+      width: fit-content;
+      color: black;
+    }
+    
+    h2 {
+      font-size: small;
+    }
+    
+    h3 {
+      width: fit-content;
+      margin-bottom: 10px;
+      color: crimson;
+    }
+    
+    table, th, td {
+      border: 1px solid #ccc;
+      padding: 0px;
+      table-layout: fixed;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    
+    table {
+      width: 600px;
+      margin: 0 auto;
+      background-color: rgb(224, 224, 224);
+      margin-bottom: 10px;
+      font-size: small;
+      border-spacing: 0;
+      border-collapse: separate;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    
+    th, td {
+      padding: 3px;
+      text-align: center;
+    }
+    
+    th {
+      line-height: 30px;
+      font-size: medium;
+    }
+    
+    button {
+      background-color: darkblue;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 5px 16px;
+      cursor: pointer;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.308);
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: red;
+    }
+    
+    /* Last refreshed styles */
+    #last-refreshed-1 {
+      /* Add your desired styles here */
+      font-size: 12px;
+      color: darkblue;
+      margin-left: 10px;
+    }
+    
+    /* My Scoreboard Table styles */
+    .league-scoreboard-table {
+      cursor: pointer;
+    }
+
+    .my-scoreboard-table td:nth-child(1),
+    .my-scoreboard-table th:nth-child(1), 
+    .my-scoreboard-table-total td:nth-child(1) {
+      width: 40%;
+    }
+    .my-scoreboard-table td:nth-child(2),
+    .my-scoreboard-table th:nth-child(2),
+    .my-scoreboard-table-total td:nth-child(2) {
+      width: 20%;
+      font-weight: bold;
+    }
+    .my-scoreboard-table td:nth-child(3),
+    .my-scoreboard-table th:nth-child(3),
+    .my-scoreboard-table-total td:nth-child(3) {
+      width: 40%;
+    }
+    
+    .my-scoreboard-table-total td {
+      line-height: 25px;
+    }
+    
+    /* League Scoreboard Table styles */
+    .league-scoreboard-table td:nth-child(1),
+    .league-scoreboard-table th:nth-child(1) {
+      width: 75%;
+    }
+    .league-scoreboard-table td:nth-child(2),
+    .league-scoreboard-table th:nth-child(2) {
+      width: 25%;
+    }
+    
+    /* Rosters Table styles */
+    .hitters-table td:nth-child(1),
+    .hitters-table th:nth-child(1),
+    .pitchers-table td:nth-child(1),
+    .pitchers-table th:nth-child(1) {
+      width: 45%;
+    }
+    .hitters-table td:nth-child(2),
+    .hitters-table th:nth-child(2),
+    .pitchers-table td:nth-child(2),
+    .pitchers-table th:nth-child(2) {
+      width: 10%;
+    }
+    .hitters-table td:nth-child(3),
+    .hitters-table th:nth-child(3),
+    .pitchers-table td:nth-child(3),
+    .pitchers-table th:nth-child(3) {
+      width: 45%;
+    }
+    .hitters-table, .pitchers-table {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .batting-order {
+      background: rgb(113, 211, 113);
+      font-size: 0.7rem;
+      height: 17px;
+      width: 17px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 3px;      
+      text-align: center;
+      line-height: 17px;
+    }
+    .not-starting {
+      background: rgb(189, 92, 92);
+      font-size: 0.7rem;
+      color: white;
+      height: 17px;
+      width: 17px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 3px;
+      text-align: center;
+      line-height: 17px;
+    }
+
+    .table-wrapper {
+      padding-right: 6px; /* Add padding to accommodate the drop shadow */
+      overflow: hidden; /* Prevent the drop shadow from overflowing */
+    }
+    
+    
+    /* League Standings Table styles */
+    .standings-table td:nth-child(1),
+    .standings-table th:nth-child(1) {
+      width: 10%;
+    }
+    .standings-table td:nth-child(2),
+    .standings-table th:nth-child(2) {
+     width: 55%;
+    }
+    .standings-table td:nth-child(3),
+    .standings-table td:nth-child(3) {
+      width: 25%;
+    }
+    .standings-table td:nth-child(4),
+    .standings-table td:nth-child(4) {
+      width: 10%;
+    }
+    
+    /* Accordion element styling */
+    #player-stats-accordion {
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+
+    .container {
+        width: 600px;
+        margin: 0 auto;
+    }
+}

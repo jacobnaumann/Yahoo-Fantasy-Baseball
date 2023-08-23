@@ -1,0 +1,181 @@
+/* General styles */
+body {
+  background-color: rgb(220, 232, 247);
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+
+header {
+  background-color: rgb(220, 232, 247);
+}
+
+#league-name {
+color: black;
+margin: 0;
+}
+
+
+h1, h2 {
+  background-color: white;
+  width:fit-content;
+  border: 1px solid rgb(124, 124, 124);
+  border-radius:3px;
+  padding: 1px 10px;
+  color: black;
+}
+
+h2 {
+  font-size:small;
+}
+
+h3 {
+  background-color: white;
+  width:fit-content;
+  margin-bottom: 10px;
+  border: 1px solid rgb(124, 124, 124);
+  border-radius:3px;
+  padding: 1px 10px;
+  color: crimson;
+}
+
+table {
+  width: 100%;
+  background-color: rgb(224, 224, 224);
+  margin-bottom: 10px;
+  font-size: small;
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 0px;
+  table-layout: fixed;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+th, td {
+  padding: 3px;
+  text-align: center;
+}
+
+th {
+  line-height: 30px;
+  font-size:medium;
+}
+
+/* Drop shadow for elements */
+h1, h2, h3, table {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.308);
+}
+
+/* Team and category names */
+.team-name, .category-name {
+  color: darkblue;
+}
+
+/* Red and grey text */
+.red-text {
+  color: red;
+}
+
+.grey-text {
+  color: grey;
+}
+
+/* Button styles */
+button {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  border-radius:4px;
+  padding: 5px 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: red;
+}
+
+/* My Scoreboard Table styles */
+.my-scoreboard-table td:nth-child(1),
+.my-scoreboard-table th:nth-child(1), 
+.my-scoreboard-table-total td:nth-child(1) {
+  width: 40%;
+}
+.my-scoreboard-table td:nth-child(2),
+.my-scoreboard-table th:nth-child(2),
+.my-scoreboard-table-total td:nth-child(2) {
+  width: 20%;
+  font-weight: bold;
+}
+.my-scoreboard-table td:nth-child(3),
+.my-scoreboard-table th:nth-child(3),
+.my-scoreboard-table-total td:nth-child(3) {
+  width: 40%;
+}
+
+.my-scoreboard-table-total td {
+  line-height: 25px;
+}
+
+/* League Scoreboard Table styles */
+.league-scoreboard-table td:nth-child(1),
+.league-scoreboard-table th:nth-child(1) {
+width: 75%;
+}
+.league-scoreboard-table td:nth-child(2),
+.league-scoreboard-table th:nth-child(2) {
+width: 25%;
+}
+
+/* Rosters Table styles */
+.hitters-table td:nth-child(1),
+.hitters-table th:nth-child(1),
+.pitchers-table td:nth-child(1),
+.pitchers-table th:nth-child(1) {
+width: 10%;
+}
+.hitters-table td:nth-child(2),
+.hitters-table th:nth-child(2),
+.pitchers-table td:nth-child(2),
+.pitchers-table th:nth-child(2) {
+width: 75%;
+}
+.hitters-table td:nth-child(3),
+.hitters-table th:nth-child(3),
+.pitchers-table td:nth-child(3),
+.pitchers-table th:nth-child(3) {
+width: 15%;
+}
+.hitters-table {
+  margin-bottom: 20px;
+}
+
+
+/* League Standings Table styles */
+.standings-table td:nth-child(1),
+.standings-table th:nth-child(1) {
+  width: 10%;
+}
+.standings-table td:nth-child(2),
+.standings-table th:nth-child(2) {
+ width: 55%;
+}
+.standings-table td:nth-child(3),
+.standings-table td:nth-child(3) {
+  width: 25%;
+}
+.standings-table td:nth-child(4),
+.standings-table td:nth-child(4) {
+  width: 10%;
+}
+
+
+

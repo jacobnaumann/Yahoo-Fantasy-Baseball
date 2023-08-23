@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseball5k</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  <div class="container">
+    <header>
+        <h1 id="league-name">KGB's Champion League</h1>
+    </header>
+    <div class="scoreboards-container">
+        <section id="my-scoreboard">
+            <h3>Scoreboard</h3>
+            <table class="my-scoreboard-table">
+                <!-- Table headers and content will be populated by main.js -->
+            </table>
+            <table class="my-scoreboard-table-total">
+                <!-- Table content will be populated by main.js -->
+            </table>
+            <button id="refresh-scoreboards">Refresh Scoreboard</button>
+            <span id="last-refreshed-1"></span>
+            <div id="player-stats-accordion">
+                <h2>Matchup Rosters -></h2>
+                <div class="accordion-content">
+                  <div id="rosters">
+                    <div class="table-container">
+                      <div class="table-wrapper">
+                        <h2 class="position-label">Hitters</h2>
+                        <table class="hitters-table">
+                          <!-- Table headers and content will be populated by main.js -->
+                        </table>
+                      </div>
+                      <div class="table-wrapper">
+                        <h2 class="position-label">Pitchers</h2>
+                        <table class="pitchers-table">
+                          <!-- Table headers and content will be populated by main.js -->
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <section id="standings">
+                <h3>Current League Standings</h3>
+                <table class="standings-table">
+                    <!-- Table headers and content will be populated by main.js -->
+                </table>
+            </section>
+        </section>
+        <section id="league-scoreboard">
+            <h3>League Scoreboard</h3>
+            <div id="league-scoreboard-container">
+                <!-- Individual matchup tables will be populated by main.js -->
+            </div>
+        </section>
+    </div>
+  </div>
+  <script src="helpers.js"></script>
+  <script src="scoreboards.js"></script>
+  <script src="rosters.js"></script>
+  <script src="standings.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
